@@ -1,0 +1,18 @@
+
+/* Class = "UITextField"; placeholder = "Username"; ObjectID = "2db-nW-qcB"; */
+"2db-nW-qcB.placeholder" = "Username";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "2tp-D5-8RF"; */
+"2tp-D5-8RF.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "Yah-LK-3iN"; */
+"Yah-LK-3iN.placeholder" = "Email";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "wcG-dQ-dzc"; */
+"wcG-dQ-dzc.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = "Save"; ObjectID = "zIn-zG-CGt"; */
+"zIn-zG-CGt.configuration.title" = "Save";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "zIn-zG-CGt"; */
+"zIn-zG-CGt.normalTitle" = "Button";

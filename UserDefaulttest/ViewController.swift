@@ -16,13 +16,14 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var usernameLabel: UILabel!
     
+    
+    let storedEmail = UserDefaults.standard.object(forKey: "email")
+    let storedUsername = UserDefaults.standard.object(forKey: "username")
+    
+    
     override func viewDidLoad() {
-        
-        
         super.viewDidLoad()
      
-        let storedEmail = UserDefaults.standard.object(forKey: "email")
-        let storedUsername = UserDefaults.standard.object(forKey: "username")
         
         if let newEmail = storedEmail as? String {
             emailLabel.text = newEmail
@@ -37,10 +38,25 @@ class ViewController: UIViewController {
         UserDefaults.standard.set(emailInput.text, forKey: "email")
         UserDefaults.standard.setValue(usernameInput.text, forKey: "username")
         
-        emailLabel.text = "Name: \(emailInput.text!)"
+        emailLabel.text = "Email: \(emailInput.text!)"
         usernameLabel.text = "Username: \(usernameInput.text!)"
         
     }
+    
+    
+    @IBAction func deleteButton(_ sender: UIButton) {
+    
+        if (storedEmail as? String) != nil {
+            UserDefaults.standard.removeObject(forKey: "name")
+            emailLabel.text = "Email: "
+        }
+        if (storedUsername as? String) != nil {
+            UserDefaults.standard.removeObject(forKey: "username")
+            usernameLabel.text = "Username: "
+        }
+        
+    }
+
     
 }
 
